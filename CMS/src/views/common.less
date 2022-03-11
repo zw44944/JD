@@ -1,0 +1,83 @@
+// 侧边栏 start
+.el-aside {
+    position: relative;
+    background-color: rgba(1, 28, 47, 0.5);
+    overflow: hidden;
+}
+
+.el-menu {
+    border-right: none;
+    color: #dfdede;
+
+    // i {
+    //     color: #dfdede;
+    // }
+
+    .el-menu-item {
+        display: flex;
+        align-items: center;
+        // width: 128px;
+        height: 72px;
+        // margin-left: 12px;
+        // margin: 0 auto;
+        // text-align: center;
+    }
+
+    .el-submenu {
+        /deep/.el-submenu__title {
+            display: flex;
+            align-items: center;
+            height: 72px;
+
+        }
+    }
+
+    li.el-menu-item:hover {
+        // background: rgba(204, 204, 204, 0.5) !important;
+        background-color: transparent !important;
+        background-image: url("../assets/gensui.png");
+        background-size: 174px 72px;
+        background-repeat: no-repeat;
+    }
+
+    li.el-submenu:hover {
+        /deep/.el-submenu__title {
+            background-color: transparent !important;
+            background-image: url("../assets/gensui.png");
+            background-size: 174px 72px;
+            background-repeat: no-repeat;
+        }
+
+    }
+}
+
+.collapse-box {
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    background-color: #00a8ff;
+    opacity: 0.8;
+    top: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.expand {
+    left: -22px;
+    border-radius: 0 50% 50% 0;
+
+    img {
+        margin-left: 26px;
+    }
+}
+
+.collect {
+    right: -22px;
+    border-radius: 50% 0 0 50%;
+
+    img {
+        margin-left: 6px;
+    }
+}
+
+// 侧边栏 end
