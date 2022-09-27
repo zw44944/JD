@@ -1,0 +1,31 @@
+
+
+.tab-header {
+    display: flex;
+    height: .5rem;
+    line-height: .5rem;
+
+    div {
+        flex: 1;
+        text-align: center;
+        border-right: 1px solid #ccc;
+    }
+
+    div:last-child {
+        border-right: 0;
+    }
+
+    .active {
+        color: #f55;
+    }
+}
+
+.tab-content {
+    div {
+        display: none;
+    }
+
+    .show {
+        display: block;
+    }
+}
